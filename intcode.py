@@ -4,11 +4,14 @@ def interface():
     keeprunning=True
     while keeprunning:
         print("My Program")
+        print("1-HDL")
         print("Options:")
         print("9 - Quit")
         choice = input("Enter your choice: ")
         if choice=='9':
             keeprunning=False
+        elif choice == "1":
+            HDL_driver
     return
     
 interface() 
