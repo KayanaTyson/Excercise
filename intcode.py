@@ -17,7 +17,7 @@ def interface():
         elif choice == "2":
             LDL_driver()
         elif choice == "3":
-            total_driver
+            total_driver()
 
     return
   
@@ -68,5 +68,10 @@ def LDL_driver():
     LDL_value=accept_input("LDL")
     classification=check_LDL(LDL_value)
     print_results("LDL", LDL_value,classification)
+    
+def total_driver():
+    chol_value=accept_input("Total cholestoral")
+    classification=total_chol(chol_value)
+    print_results("Total cholestoral", chol_value,classification)
 
 interface() 
