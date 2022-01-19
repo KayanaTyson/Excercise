@@ -50,6 +50,15 @@ def check_LDL(LDL_value):
         answer = "Very High"
     return answer
     
+def total_chol(chol_value):
+    if chol_value <= 200:
+        answer = "Normal"
+    elif 200< LDL_value <= 239:
+        answer = "Borderline High"
+    else:
+        answer = "High"
+    return answer
+    
 def HDL_driver():
     HDL_value = accept_input("HDL")
     classification = check_HDL(HDL_value)
