@@ -53,7 +53,7 @@ def HDL_driver():
     print_results("HDL", HDL_value, classification)
     
 def LDL_driver():
-    LDL_value=accept_inout("LDL")
+    LDL_value=accept_input("LDL")
     classification=check_LDL(LDL_value)
     print_results("LDL", LDL_value,classification)
 
