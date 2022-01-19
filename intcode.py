@@ -12,6 +12,7 @@ def interface():
             keeprunning=False
         elif choice == "1":
             HDL_driver()
+
     return
   
 def accept_input(test_name):
@@ -30,6 +31,17 @@ def check_HDL(HDL_value):
         answer = "Borderline Low"
     else:
         answer = "Low"
+    return answer
+
+def check_LDL(LDL_value):
+    if LDL_value <= 130:
+        answer = "Normal"
+    elif 130< LDL_value <= 159:
+        answer = "Borderline High"
+    elif 159< LDL_value <= 189:
+        answer = "High"
+    else:
+        answer = "Very High"
     return answer
     
 def HDL_driver():
